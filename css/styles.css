@@ -46,16 +46,17 @@ body {
 /*          H e a d e r           */
 /* ============================== */
 
-.header {background: var(--primary-bg-color);}
+.header {
+    background: var(--primary-bg-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 /* логотип */
 .logo {
-    margin-right: 93px;
-
     color: var(--accent-color);
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -63,6 +64,9 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+.header .logo{
+    margin-right: 93px;
 }
 .logo-black {
     color: black;
@@ -107,6 +111,9 @@ body {
     align-items: center;
 }
 .contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -127,14 +134,11 @@ body {
 /* ============================== */
 
 /* Секція "герой" */
-.hero {   
-    margin-bottom: 94px; 
-    background-color: #2F303A;
-}
-.hero-container{
+.hero { 
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-color: #2F303A;
 }
 .hero-title { 
     margin-right: auto;
@@ -178,6 +182,7 @@ body {
 
 /* Секція "Переваги" */
 .advantage {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .invisible {
@@ -192,17 +197,17 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-.adv-list,
-.work-list,
-.comand-list {
+.adv,
+.work,
+.ccards {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.adv-item{
+.adv .item{
     width: 270px;
 }
-.adv-title {
+.adv .title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -211,16 +216,16 @@ body {
     text-transform: uppercase;
     color: var(--primary-text-color);
 } 
-.adv-text {
+.adv .text {
     line-height: 1.71;
     color:var(--secondary-text-color);
 }
 
 /* Секція "Чим ми займаємось" */
-.work{
+.works{
     padding-bottom: 150px;
 }
-.work .section-title,
+.works .section-title,
 .comand .section-title {
     margin-bottom: 50px;
 }
@@ -231,7 +236,7 @@ body {
     padding-bottom: 94px;
     background: var(--secondary-bg-color);
 }
-.comand-card{
+.ccard{
     background: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -271,19 +276,18 @@ body {
     margin-bottom: 20px;
 }
 .address {
-    width: 230px;
     line-height: 1.71;
     font-style: normal;
 }
-.ads-item{
+.ads .item{
     display: block;
     width: 230px;
     margin-bottom: 9px;
 }
-.ads-item:last-child{
+.ads .item:last-child{
     margin-bottom: 0;
 }
-.ads {
+.map {
     text-decoration: none;
     color:var(--third-text-color)
 }
@@ -302,16 +306,16 @@ body {
 }
 
 /* Портфолио - кнопки */
-.btn-list{
+.button{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.btn-item{
-    margin-right: 8px;
     margin-bottom: 50px;
 }
-.btn-item:last-child{
+.button .item{
+    margin-right: 8px;
+}
+.button .item:last-child{
     margin-right: 0;
 }
 .btn {
@@ -344,20 +348,22 @@ body {
 }
 
 /* Портфоліо - картки */
-.cards-list{
+.cards{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.cards-item{
-    margin-bottom: 30px;
+.cards .item{
     background: var(--primary-bg-color);
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
 }
-.card-text-bloc{
+.cards .item:nth-child(-n+6){
+    margin-bottom: 30px;
+}
+.text-bloc{
     padding: 20px 24px;
+    border: 1px solid  #EEEEEE;
+    border-top: 0; 
 }
 .card {
     text-decoration: none;
