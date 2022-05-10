@@ -111,6 +111,7 @@ body {
     align-items: center;
 }
 .contacts {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -223,7 +224,7 @@ body {
 
 /* Секція "Чим ми займаємось" */
 .works{
-    padding-bottom: 150px;
+    padding-bottom: 94px;
 }
 .works .section-title,
 .comand .section-title {
@@ -281,7 +282,6 @@ body {
 }
 .ads .item{
     display: block;
-    width: 230px;
     margin-bottom: 9px;
 }
 .ads .item:last-child{
